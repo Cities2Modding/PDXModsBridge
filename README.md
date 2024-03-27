@@ -4,7 +4,18 @@ This enables modders to use standard IMod interfaces of Cities Skylines 2 outsid
 
 Modders can also remove BepInEx as a dependency as it is only required for this loader.
 
-## Installation
+## Setup
+
+For modders, just use the normal IMod interface from the game. Then add this 'Description' attribute with the exact value:
+
+```
+[Description("bridge)]
+class TestMod : IMod
+{
+}
+```
+
+Now you can upload it to Thunderstore and it will load automatically without BepInEx as a direct dependency for your mod.
 
 ### Prerequisites
 
